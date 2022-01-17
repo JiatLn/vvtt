@@ -5,7 +5,7 @@
 npm install
 
 # 启动项目
-npm run dev
+pnpm run dev
 ```
 
 # 相关技术栈
