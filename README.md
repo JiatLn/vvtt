@@ -2,10 +2,10 @@
 
 ```bash
 # 安装依赖
-npm install
+pnpm install
 
 # 启动项目
-pnpm run dev
+npm run dev
 ```
 
 # 相关技术栈
