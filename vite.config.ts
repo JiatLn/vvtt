@@ -23,6 +23,8 @@ export default ({ mode }) => {
       legacy({
         targets: ['ie >= 11'],
         additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+        // https://github.com/vitejs/vite/issues/5952
+        modernPolyfills: true,
       }),
       PurgeIcons({
         /* PurgeIcons Options */
