@@ -28,6 +28,11 @@
           <span>isLogin: {{ userStore.isLogin() }}</span>
         </div>
       </section>
+      <section class="flex">
+        <div class="box">
+          <p>TSX support</p>
+        </div>
+      </section>
     </div>
     <p class="mt-8 text-gray-400">This is a demo page, you can clear it and start coding~ :)</p>
   </div>

@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 import legacy from '@vitejs/plugin-legacy';
 
 import PurgeIcons from 'vite-plugin-purge-icons';
@@ -19,6 +20,7 @@ export default ({ mode }) => {
     },
     plugins: [
       vue(),
+      vueJsx({ babelPlugins: ['@vue/babel-plugin-jsx'] }),
       WindiCSS(),
       legacy({
         targets: ['ie >= 11'],
