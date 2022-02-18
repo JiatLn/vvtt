@@ -43,6 +43,10 @@
   import useUserStore from '@/store/modules/useUserStore';
 
   const userStore = useUserStore();
+
+  // auto import ref
+  const message = ref<string>('hello world');
+  console.log(message.value);
 </script>
 
 <style lang="scss" scoped>
