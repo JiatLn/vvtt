@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@iconify/iconify": "^2.1.1",
@@ -29,6 +30,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
     "prettier": "^2.5.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
@@ -37,5 +40,15 @@
     "vue-eslint-parser": "^8.0.1",
     "vue-tsc": "^0.29.8",
     "windicss": "^3.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint",
+    "src/**/*.ts": "eslint",
+    "src/**/*.vue": "eslint"
   }
 }
