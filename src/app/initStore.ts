@@ -1,4 +1,4 @@
-import { initUserStore } from '@/store/modules/useUserStore';
+import { initUserStore } from '@/store';
 
 export const initStore = () => {
   initUserStore();

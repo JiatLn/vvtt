@@ -15,7 +15,9 @@
     "dayjs": "^1.10.7",
     "pinia": "^2.0.9",
     "sass": "^1.48.0",
+    "unocss": "^0.28.0",
     "unplugin-auto-import": "^0.6.0",
+    "unplugin-vue-components": "^0.18.0",
     "vue": "^3.2.25",
     "vue-router": "4"
   },
@@ -38,8 +40,7 @@
     "vite-plugin-purge-icons": "^0.7.0",
     "vite-plugin-windicss": "^1.6.2",
     "vue-eslint-parser": "^8.0.1",
-    "vue-tsc": "^0.29.8",
-    "windicss": "^3.4.2"
+    "vue-tsc": "^0.29.8"
   },
   "husky": {
     "hooks": {

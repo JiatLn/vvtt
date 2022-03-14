@@ -6,8 +6,9 @@ import router from './router';
 
 import { initStore } from '@/app/initStore';
 
+import 'uno.css';
+import '@unocss/reset/tailwind.css';
 import '@purge-icons/generated';
-import 'virtual:windi.css';
 import '@/assets/styles/_global.scss';
 
 const app = createApp(App);

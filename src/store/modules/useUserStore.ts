@@ -17,6 +17,11 @@ const useUserStore = defineStore({
       id: '',
     };
   },
+  getters: {
+    isLogin(): boolean {
+      return this.token !== '';
+    },
+  },
   actions: {
     setToken(token: string) {
       this.token = token;
@@ -36,9 +41,6 @@ const useUserStore = defineStore({
         id: '',
       };
       localStorage.removeItem(USER_KEY);
-    },
-    isLogin() {
-      return this.token !== '';
     },
   },
 });
