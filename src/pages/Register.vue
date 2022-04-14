@@ -1,5 +1,5 @@
 <template>
-  <div>注册页</div>
+  <div>register page</div>
 </template>
 
 <script setup lang="ts"></script>
