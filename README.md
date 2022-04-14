@@ -1,22 +1,20 @@
-### 如何开始
+## Usage
 
 ```bash
-# 安装依赖
-pnpm install
+yarn install
 
-# 启动项目
-npm run dev
+yarn run dev
 ```
 
-# 相关技术栈
+## Features
 
 - [vue@3.2](https://v3.cn.vuejs.org/guide/introduction.html)
 
 - [typescript](https://www.tslang.cn/docs/home.html)
 
-- [icon](https://icon-sets.iconify.design/)
+- [iconify](https://icon-sets.iconify.design/)
 
-- [windicss](https://windicss.org/guide/)
+- [unocss](https://github.com/unocss/unocss)
 
 - [Pinia](https://pinia.vuejs.org/introduction.html)
 
@@ -25,3 +23,7 @@ npm run dev
 - [vue-router@4](https://next.router.vuejs.org/)
 
 - [dayjs](https://dayjs.gitee.io/zh-CN/)
+
+## License
+
+[MIT](./LICENSE) License © 2022-Present [JiatLn](https://github.com/JiatLn)
