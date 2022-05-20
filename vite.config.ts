@@ -1,19 +1,18 @@
-import { defineConfig, loadEnv } from 'vite';
+import * as path from 'path'
+import { defineConfig, loadEnv } from 'vite'
 
-import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import legacy from '@vitejs/plugin-legacy';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
-import PurgeIcons from 'vite-plugin-purge-icons';
-import Unocss from 'unocss/vite';
-
-import * as path from 'path';
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import legacy from '@vitejs/plugin-legacy'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import PurgeIcons from 'vite-plugin-purge-icons'
+import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
   // 加载 .env.[mode]
-  const config = loadEnv(mode, './');
+  const config = loadEnv(mode, './')
   return defineConfig({
     resolve: {
       alias: {
@@ -51,8 +50,8 @@ export default ({ mode }) => {
           target: config.VITE_API_URL,
           changeOrigin: true,
           rewrite: (path) => {
-            const reg = new RegExp(`^${config.VITE_BASE_API}`);
-            return path.replace(reg, '');
+            const reg = new RegExp(`^${config.VITE_BASE_API}`)
+            return path.replace(reg, '')
           },
         },
       },
@@ -76,5 +75,5 @@ export default ({ mode }) => {
         },
       },
     },
-  });
-};
+  })
+}

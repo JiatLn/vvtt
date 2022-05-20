@@ -1,14 +1,13 @@
 // import useUserStore from '@/store/modules/useUserStore';
-import type { RouteRecordRaw } from 'vue-router';
-import { createRouter, createWebHistory } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
-const routes: RouteRecordRaw[] = [];
+const routes: RouteRecordRaw[] = []
 
-const modules = import.meta.globEager('./modules/*.ts');
+const modules = import.meta.globEager('./modules/*.ts')
 
-for (const path in modules) {
-  routes.push(...modules[path].default);
-}
+for (const path in modules)
+  routes.push(...modules[path].default)
 
 const router = createRouter({
   history: createWebHistory(),
@@ -18,12 +17,13 @@ const router = createRouter({
       return {
         el: to.hash,
         behavior: 'smooth',
-      };
-    } else {
-      return { top: 0 };
+      }
+    }
+    else {
+      return { top: 0 }
     }
   },
-});
+})
 
 // 全局路由登录拦截
 router.beforeEach((to, from, next) => {
@@ -34,7 +34,7 @@ router.beforeEach((to, from, next) => {
   // } else if (to.name === 'Login' && isLogin) {
   //   next({ name: 'Home' });
   // }
-  next();
-});
+  next()
+})
 
-export default router;
+export default router

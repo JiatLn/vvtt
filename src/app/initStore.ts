@@ -1,5 +1,5 @@
-import { initUserStore } from '@/store';
+import { initUserStore } from '@/store'
 
 export const initStore = () => {
-  initUserStore();
-};
+  initUserStore()
+}

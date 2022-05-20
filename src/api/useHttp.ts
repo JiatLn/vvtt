@@ -1,15 +1,11 @@
-import type { Method } from 'axios';
-import requests from './request';
+import type { Method } from 'axios'
+import requests from './request'
 
 export interface HTTPConfig {
-  url: string;
-  method: Method;
-  data?: {
-    [key: string]: unknown;
-  };
-  params?: {
-    [key: string]: unknown;
-  };
+  url: string
+  method: Method
+  data?: Record<string, unknown>
+  params?: Record<string, unknown>
 }
 
 const useHttp = <T>(config: HTTPConfig): Promise<T> => {
@@ -21,12 +17,12 @@ const useHttp = <T>(config: HTTPConfig): Promise<T> => {
       params: config.params,
     })
       .then((resp) => {
-        resolve(resp.data);
+        resolve(resp.data)
       })
       .catch((err) => {
-        reject(err);
-      });
-  });
-};
+        reject(err)
+      })
+  })
+}
 
-export default useHttp;
+export default useHttp
