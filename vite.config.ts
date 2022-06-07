@@ -34,8 +34,17 @@ export default ({ mode }) => {
         content: ['**/*.html', '**/*.js', '**/*.vue'],
       }),
       AutoImport({
-        imports: ['vue', 'vue-router'],
+        imports: [
+          'vue',
+          'vue-router',
+          '@vueuse/core',
+        ],
         dts: 'src/auto-import.d.ts',
+        dirs: [
+          'src/composables',
+          'src/store',
+        ],
+        vueTemplate: true,
         resolvers: [],
       }),
       Components({
