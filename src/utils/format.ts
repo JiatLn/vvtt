@@ -1,5 +1,5 @@
 export const round = (num: number, precision = 2) => {
-  return Math.round(num * Math.pow(10, precision)) / Math.pow(10, precision)
+  return Math.round(num * 10 ** precision) / 10 ** precision
 }
 
 export const parseImageUrl = (url: string) => {

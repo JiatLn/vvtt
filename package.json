@@ -1,11 +1,11 @@
 {
   "name": "vite2-vue3-ts-template",
   "version": "0.1.0",
-  "license": "MIT",
   "author": {
     "name": "JiatLn",
     "email": "lne128gene980@163.com"
   },
+  "license": "MIT",
   "scripts": {
     "dev": "vite --port 9726 --open",
     "build": "vue-tsc --noEmit && vite build",

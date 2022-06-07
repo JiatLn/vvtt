@@ -1,5 +1,6 @@
 @mixin scroll($w: 5px, $hide: transparent) {
   overflow: auto;
+
   /* 设置滚动条的样式 */
   &::-webkit-scrollbar {
     transition: all 0.2s;
@@ -41,6 +42,7 @@
 
 @mixin hide-scroll {
   overflow-y: auto;
+
   &::-webkit-scrollbar {
     transition: all 0.2s;
     background-color: transparent;
