@@ -1,7 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const router = useRouter()
+const backHome = () => router.push({ name: 'Home' })
+</script>
 
 <template>
-  <div>404</div>
+  <div flex="c col" h-full>
+    <div mb-10px>
+      404 - Page Not Found
+    </div>
+    <div btn w-200px @click="backHome">
+      back home
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
