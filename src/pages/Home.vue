@@ -5,46 +5,35 @@ const userStore = useUserStore()
 </script>
 
 <template>
-  <div class="warpper">
-    <div flex items-center gap-2>
-      <section flex>
-        <div class="box">
-          <p>unocss</p>
-          <div text-red-400 uppercase>
-            Home Page
-          </div>
+  <div h-full w-full flex="c col">
+    <div flex items-start gap-2>
+      <TheBox title="unocss">
+        <div text-brand-primary uppercase>
+          Home Page
         </div>
-      </section>
-      <section class="flex">
-        <div class="box">
-          <p>Vue-router@4</p>
-          <div flex justify-between space-x-4>
-            <router-link class="btn" :to="{ name: 'Login' }">
-              Login
-            </router-link>
-            <router-link class="btn" :to="{ name: 'Register' }">
-              Register
-            </router-link>
-          </div>
+      </TheBox>
+      <TheBox title="Vue-router">
+        <div flex justify-between space-x-4>
+          <router-link btn :to="{ name: 'Login' }">
+            Login
+          </router-link>
+          <router-link btn :to="{ name: 'Register' }">
+            Register
+          </router-link>
         </div>
-      </section>
-      <section class="flex">
-        <div class="box">
-          <p>iconify</p>
-          <AppIcon icon="flat-color-icons:home" text-30px />
+      </TheBox>
+      <TheBox title="iconify">
+        <div flex-c gap-12px text-xl>
+          <AppIcon icon="flat-color-icons:home" />
+          <a i-akar-icons:github-fill cursor-pointer color-gray-600 hover:color-brand-primary href="https://github.com/JiatLn/vite2-vue3-ts-template" target="_blank" />
         </div>
-      </section>
-      <section flex>
-        <div class="box">
-          <p>Pinia</p>
-          <span>isLogin: {{ userStore.isLogin }}</span>
+      </TheBox>
+      <TheBox title="Pinia">
+        <div>
+          isLogin: <span font-bold>{{ userStore.isLogin }}</span>
         </div>
-      </section>
-      <section flex>
-        <div class="box">
-          <p>TSX support</p>
-        </div>
-      </section>
+      </TheBox>
+      <TheBox title="TSX support" />
     </div>
     <p mt-8 text-gray-400>
       This is a demo page, you can clear it and start coding~ :)
@@ -53,11 +42,4 @@ const userStore = useUserStore()
 </template>
 
 <style lang="scss" scoped>
-.warpper {
-  @apply h-full w-full flex flex-col justify-center items-center;
-}
-
-.box {
-  @apply py-8 px-8 flex flex-col justify-center items-center bg-white rounded-xl shadow-md space-y-2;
-}
 </style>

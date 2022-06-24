@@ -24,6 +24,8 @@ yarn run dev
 
 - [vue-router@4](https://next.router.vuejs.org/)
 
+- [vueuse](https://vueuse.org/guide/)
+
 - [dayjs](https://dayjs.gitee.io/zh-CN/)
 
 ## License
