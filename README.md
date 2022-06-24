@@ -1,3 +1,8 @@
+# VVTT
+
+> vvtt is vite-vue-ts-template :)
+
+
 ## Usage
 
 ```bash

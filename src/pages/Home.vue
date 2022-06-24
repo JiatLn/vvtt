@@ -25,7 +25,7 @@ const userStore = useUserStore()
       <TheBox title="iconify">
         <div flex-c gap-12px text-xl>
           <AppIcon icon="flat-color-icons:home" />
-          <a i-akar-icons:github-fill cursor-pointer color-gray-600 hover:color-brand-primary href="https://github.com/JiatLn/vite2-vue3-ts-template" target="_blank" />
+          <a i-akar-icons:github-fill cursor-pointer color-gray-600 hover:color-brand-primary href="https://github.com/JiatLn/vvtt" target="_blank" />
         </div>
       </TheBox>
       <TheBox title="Pinia">
