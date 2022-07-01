@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 9726 --open",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint .",
