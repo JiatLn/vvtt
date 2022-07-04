@@ -8,7 +8,6 @@ import { initStore } from '@/app/initStore'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
-import '@purge-icons/generated'
 import '@/assets/styles/_global.scss'
 
 const app = createApp(App)

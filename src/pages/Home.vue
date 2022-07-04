@@ -24,7 +24,7 @@ const userStore = useUserStore()
       </TheBox>
       <TheBox title="iconify">
         <div flex-c gap-12px text-xl>
-          <AppIcon icon="flat-color-icons:home" />
+          <div i-flat-color-icons:home />
           <a i-akar-icons:github-fill cursor-pointer color-gray-600 hover:color-brand-primary href="https://github.com/JiatLn/vvtt" target="_blank" />
         </div>
       </TheBox>
