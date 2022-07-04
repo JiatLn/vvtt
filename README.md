@@ -15,7 +15,7 @@ yarn run dev
 
 ## 🚀 Features
 
-- ✌️ [Vue3](https://vuejs.org) - The Progressive
+- 🌲 [Vue3](https://vuejs.org) - The Progressive
 JavaScript Framework.
 
 - ⚡️ [Vite](https://vitejs.dev) - Next Generation Frontend Tooling.
@@ -33,6 +33,8 @@ JavaScript Framework.
 - 🦾 [TypeScript](https://www.typescriptlang.org) , of course.
 
 - ⏲️ [Day.js](https://github.com/iamkun/dayjs) - Fast 2kB alternative to Moment.js with the same modern API.
+
+- 🌸 [Less](https://lesscss.org) - It's CSS, with just a little more.
 
 ## 📄 License
 

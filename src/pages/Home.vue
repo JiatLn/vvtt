@@ -41,5 +41,5 @@ const userStore = useUserStore()
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 </style>

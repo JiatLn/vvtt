@@ -6,5 +6,5 @@ import Layout from '@/layout/index.vue'
   <Layout />
 </template>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 </style>

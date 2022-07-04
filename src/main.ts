@@ -8,7 +8,7 @@ import { initStore } from '@/app/initStore'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
-import '@/assets/styles/_global.scss'
+import '@/assets/styles/global.less'
 
 const app = createApp(App)
 const pinia = createPinia()

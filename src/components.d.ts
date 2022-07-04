@@ -3,6 +3,8 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
+export {}
+
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     LazyImg: typeof import('./components/common/LazyImg.vue')['default']
@@ -10,6 +12,5 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     TheBox: typeof import('./components/common/TheBox.vue')['default']
   }
-}
 
-export {}
+}
