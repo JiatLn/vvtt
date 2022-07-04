@@ -1,6 +1,7 @@
 {
   "name": "vvtt",
   "version": "1.0.0",
+  "description": "VVTT is means Vite-Vue-Ts-Template :)",
   "author": {
     "name": "JiatLn",
     "email": "lne128gene980@163.com"

@@ -1,6 +1,6 @@
 # VVTT
 
-> **VVTT** is **V**ite-**V**ue-**T**s-**T**emplate :)
+> **VVTT** is means **V**ite-**V**ue-**T**s-**T**emplate :)
 
 
 ## 🦄 Usage
