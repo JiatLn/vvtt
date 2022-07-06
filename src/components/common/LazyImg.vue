@@ -27,6 +27,11 @@ onMounted(() => {
   intersectionObserver.observe(imgRef.value!)
 })
 
+watch(() => props.src, () => {
+  if (imgRef.value)
+    imgRef.value.src = props.src
+})
+
 onUnmounted(() => {
   intersectionObserver && intersectionObserver.disconnect()
 })
