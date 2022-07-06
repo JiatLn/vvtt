@@ -6,16 +6,16 @@ export interface BasicResp<T> {
   msg: string
 }
 
-export interface LoginResp {
-  token: string
-  user: Partial<IUserInfo>
-}
-
 export interface DataResp<T> {
   code: number
   total: number
-  rows: T
+  rows: Array<T>
   msg: string
+}
+
+export interface LoginResp {
+  token: string
+  user: Partial<IUserInfo>
 }
 
 export interface IPageParams {
