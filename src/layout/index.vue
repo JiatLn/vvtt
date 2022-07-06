@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view />
+  <section h-fs>
+    <router-view />
+  </section>
+  <TheFooter />
 </template>
 
 <style scoped lang="less">
