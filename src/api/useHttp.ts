@@ -6,6 +6,7 @@ export interface HTTPConfig {
   method: Method
   data?: Record<string, any>
   params?: Record<string, any>
+  headers?: Record<string, any>
 }
 
 const useHttp = <T>(config: HTTPConfig): Promise<T> => {
@@ -15,6 +16,7 @@ const useHttp = <T>(config: HTTPConfig): Promise<T> => {
       method: config.method,
       data: config.data,
       params: config.params,
+      headers: config.headers,
     })
       .then((resp) => {
         resolve(resp.data)
