@@ -50,6 +50,7 @@ export default ({ mode }) => {
     ],
     server: {
       host: '0.0.0.0',
+      port: 5577,
       proxy: {
         [config.VITE_BASE_API]: {
           target: config.VITE_API_URL,
