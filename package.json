@@ -23,6 +23,7 @@
     "dayjs": "^1.11.3",
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.16",
+    "pinia-plugin-keep": "^0.1.1",
     "unocss": "^0.44.3",
     "vue": "^3.2.37",
     "vue-router": "4"

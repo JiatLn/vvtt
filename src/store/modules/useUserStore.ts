@@ -6,10 +6,8 @@ export interface IUserInfo {
   id: string
 }
 
-export const USER_KEY = 'user'
-
-const useUserStore = defineStore({
-  id: USER_KEY,
+export const useUserStore = defineStore({
+  id: 'user',
   state: (): IUserInfo => {
     return {
       token: '',
@@ -35,25 +33,9 @@ const useUserStore = defineStore({
       })
     },
     logout() {
-      this.$state = {
-        token: '',
-        name: '',
-        id: '',
-      }
-      localStorage.removeItem(USER_KEY)
+      this.$reset()
+      localStorage.removeItem('user')
     },
   },
 })
 
-export const initUserStore = () => {
-  const instance = useUserStore()
-  instance.$subscribe((mutation, state) => {
-    localStorage.setItem(instance.$id, JSON.stringify(state))
-  })
-
-  const val = localStorage.getItem(instance.$id)
-  if (val)
-    instance.login(JSON.parse(val))
-}
-
-export default useUserStore
