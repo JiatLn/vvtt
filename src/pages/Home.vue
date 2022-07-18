@@ -13,12 +13,12 @@ const userStore = useUserStore()
         </div>
       </TheBox>
       <TheBox title="Vue Router">
-        <div flex justify-between space-x-4>
+        <div flex="c col" space-y-2>
           <router-link btn :to="{ name: 'Login' }">
-            Login
+            /login
           </router-link>
           <router-link btn :to="{ name: 'Register' }">
-            Register
+            /register
           </router-link>
         </div>
       </TheBox>
@@ -29,8 +29,16 @@ const userStore = useUserStore()
         </div>
       </TheBox>
       <TheBox title="Pinia">
-        <div>
-          isLogin: <span font-bold>{{ userStore.isLogin }}</span>
+        <div flex="c col" space-y-2>
+          <div>
+            isLogin: <span font-bold>{{ userStore.isLogin }}</span>
+          </div>
+          <button v-if="!userStore.isLogin" btn @click="userStore.login({ token: 'a token' })">
+            login
+          </button>
+          <button v-if="userStore.isLogin" btn @click="userStore.logout()">
+            logout
+          </button>
         </div>
       </TheBox>
       <TheBox title="TSX Support" />
