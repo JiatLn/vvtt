@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes: RouteRecordRaw[] = []
 
-const modules = import.meta.globEager('./modules/*.ts')
+const modules = import.meta.glob('./modules/*.ts', { eager: true }) as Record<string, any>
 
 for (const path in modules)
   routes.push(...modules[path].default)
