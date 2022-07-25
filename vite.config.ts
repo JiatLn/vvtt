@@ -3,14 +3,13 @@ import { defineConfig, loadEnv } from 'vite'
 
 import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
-// import legacy from '@vitejs/plugin-legacy'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
-  // 加载 .env.[mode]
+  // load .env.[mode]
   const config = loadEnv(mode, './')
   return defineConfig({
     resolve: {
@@ -23,12 +22,6 @@ export default ({ mode }) => {
       Vue(),
       VueJsx(),
       Unocss(),
-      // legacy({
-      //   targets: ['ie >= 11'],
-      //   additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-      //   // https://github.com/vitejs/vite/issues/5952
-      //   modernPolyfills: true,
-      // }),
       AutoImport({
         imports: [
           'vue',
@@ -37,8 +30,8 @@ export default ({ mode }) => {
         ],
         dts: 'src/auto-import.d.ts',
         dirs: [
-          'src/composables',
-          'src/store',
+          'src/composables/**',
+          'src/store/**',
         ],
         vueTemplate: true,
         resolvers: [],
