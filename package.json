@@ -11,7 +11,7 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "vue-tsc --noEmit",
-    "preview": "vite preview",
+    "preview": "vite build && vite preview",
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -45,6 +45,7 @@
     "unplugin-auto-import": "^0.10.3",
     "unplugin-vue-components": "^0.21.2",
     "vite": "^3.0.4",
+    "vite-plugin-injection": "^0.1.0",
     "vue-tsc": "^0.39.4"
   },
   "husky": {

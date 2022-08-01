@@ -4007,6 +4007,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+vite-plugin-injection@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/vite-plugin-injection/-/vite-plugin-injection-0.1.0.tgz#ebb11f1523ae4349c09cfa266b8c6836448c2a4b"
+  integrity sha512-ldrfCqoMJX19trdo7t1b0eaSGl9RdcKg9PdNN+6Zzanb8q3qDWZL4Fr00lz+WM9sczUS5gV24aT99v/5HVcgdw==
+
 vite@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/vite/-/vite-3.0.4.tgz#c61688d6b97573e96cf5ac25f2d68597b5ce68e8"

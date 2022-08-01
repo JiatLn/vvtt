@@ -5,6 +5,7 @@ import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import Injection from 'vite-plugin-injection'
 import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
@@ -22,6 +23,7 @@ export default ({ mode }) => {
       Vue(),
       VueJsx(),
       Unocss(),
+      Injection(),
       AutoImport({
         imports: [
           'vue',
