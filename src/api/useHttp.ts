@@ -1,4 +1,4 @@
-import type { AxiosError, Method } from 'axios'
+import type { AxiosError, Method, ResponseType } from 'axios'
 import requests from '@/api/request'
 
 export interface HTTPConfig {
@@ -7,6 +7,7 @@ export interface HTTPConfig {
   data?: Record<string, any>
   params?: Record<string, any>
   headers?: Record<string, any>
+  responseType?: ResponseType
 }
 
 const useHttp = <T>(config: HTTPConfig): Promise<T> => {
@@ -17,6 +18,7 @@ const useHttp = <T>(config: HTTPConfig): Promise<T> => {
       data: config.data,
       params: config.params,
       headers: config.headers,
+      responseType: config.responseType,
     })
       .then((resp) => {
         resolve(resp.data)
