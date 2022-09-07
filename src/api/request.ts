@@ -2,7 +2,7 @@ import axios from 'axios'
 import { INVALID_TOKEN, NO_PERMISSION, OK_CODE } from '@/app/keys'
 import router from '@/router'
 import type { IUserInfo } from '@/store/modules/useUserStore'
-import useUserStore from '@/store/modules/useUserStore'
+import { useUserStore } from '@/store'
 
 const requests = axios.create({
   baseURL: import.meta.env.VITE_BASE_API,

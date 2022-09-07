@@ -1,4 +1,4 @@
-import type { IUserInfo } from '@/store/modules/useUserStore'
+import type { IUserInfo } from '@/store'
 
 export interface BasicResp<T> {
   code: number

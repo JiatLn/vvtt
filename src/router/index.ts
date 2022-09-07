@@ -1,10 +1,9 @@
-// import useUserStore from '@/store/modules/useUserStore';
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes: RouteRecordRaw[] = []
 
-const modules = import.meta.globEager('./modules/*.ts')
+const modules = import.meta.glob('./modules/*.ts', { eager: true }) as Record<string, any>
 
 for (const path in modules)
   routes.push(...modules[path].default)
@@ -27,13 +26,6 @@ const router = createRouter({
 
 // 全局路由登录拦截
 router.beforeEach((to, from, next) => {
-  // const userStroe = useUserStore();
-  // const isLogin = userStroe.isLogin();
-  // if (to.meta.needLogin && !isLogin) {
-  //   next({ name: 'Login' });
-  // } else if (to.name === 'Login' && isLogin) {
-  //   next({ name: 'Home' });
-  // }
   next()
 })
 
