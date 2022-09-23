@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from '@/assets/logo.png'
 import { useUserStore } from '@/store'
 
 const userStore = useUserStore()
@@ -6,7 +7,7 @@ const userStore = useUserStore()
 
 <template>
   <div h-100vh w-full flex="c col">
-    <LazyImg w-80px h-80px src="src/assets/logo.png" err-src="src/assets/vueuse.svg"/>
+    <LazyImg w-80px h-80px :src="logo" />
     <div flex items-start gap-2>
       <TheBox title="UnoCSS">
         <div text-brand-primary>
