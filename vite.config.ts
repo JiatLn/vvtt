@@ -29,7 +29,7 @@ export default ({ mode }) => {
           'vue-router',
           '@vueuse/core',
         ],
-        dts: 'src/auto-import.d.ts',
+        dts: 'src/types/auto-import.d.ts',
         dirs: [
           'src/composables/**',
           'src/store/**',
@@ -38,7 +38,7 @@ export default ({ mode }) => {
         resolvers: [],
       }),
       Components({
-        dts: 'src/components.d.ts',
+        dts: 'src/types/components.d.ts',
         resolvers: [],
       }),
     ],
