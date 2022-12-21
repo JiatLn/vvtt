@@ -20,4 +20,5 @@ const testTsx = (props: { title: string }) => {
 </template>
 
 <style lang="less" scoped>
+
 </style>

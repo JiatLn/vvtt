@@ -7,4 +7,5 @@ import Layout from '@/layout/index.vue'
 </template>
 
 <style lang="less" scoped>
+
 </style>

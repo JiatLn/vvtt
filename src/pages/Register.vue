@@ -15,4 +15,5 @@ const backHome = () => router.push({ name: 'Home' })
 </template>
 
 <style lang="less" scoped>
+
 </style>

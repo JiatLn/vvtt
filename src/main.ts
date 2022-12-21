@@ -21,4 +21,3 @@ app.use(router).use(pinia)
 setupGlobDirectives(app)
 
 app.mount('#app')
-
