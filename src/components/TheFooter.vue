@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer text="center gray-300 12px" py-2>
+  <footer text="center gray-400 12px" py-2>
     MIT Licensed | Copyright &copy; 2022-PRESENT JiatLn VVTT
   </footer>
 </template>
