@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import logo from '@/assets/logo.png'
-import { useUserStore } from '@/store'
 
-const userStore = useUserStore()
+function onLogin() {
+  login({ token: 'KFCVME50' })
+}
 </script>
 
 <template>
@@ -33,13 +34,13 @@ const userStore = useUserStore()
       <TheBox title="Pinia">
         <div flex="c col" space-y-2>
           <div>
-            isLogin: <span font-bold>{{ userStore.isLogin }}</span>
+            isLogin: <span font-bold>{{ isLogin }}</span>
           </div>
-          <button v-if="!userStore.isLogin" btn @click="userStore.login({ token: 'a token' })">
-            login
-          </button>
-          <button v-if="userStore.isLogin" btn @click="userStore.logout()">
+          <button v-if="isLogin" btn @click="logout">
             logout
+          </button>
+          <button v-else btn @click="onLogin">
+            login
           </button>
         </div>
       </TheBox>
@@ -52,5 +53,4 @@ const userStore = useUserStore()
 </template>
 
 <style lang="less" scoped>
-
 </style>
