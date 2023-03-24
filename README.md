@@ -34,7 +34,7 @@ JavaScript Framework.
 
 - ⏲️ [Day.js](https://github.com/iamkun/dayjs) - Fast 2kB alternative to Moment.js with the same modern API.
 
-- 🌸 [Less](https://lesscss.org) - It's CSS, with just a little more.
+- 🌸 [SCSS](https://sass-lang.com/guide) - Sass makes CSS fun!
 
 ## 📄 License
 

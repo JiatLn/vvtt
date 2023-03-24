@@ -46,7 +46,7 @@ onUnmounted(() => {
   <img ref="imgRef" :class="props.class" :src="props.errSrc" alt="">
 </template>
 
-<style lang="less">
+<style lang="scss">
 ::v-global(body) {
   @keyframes c3 {
     0% {

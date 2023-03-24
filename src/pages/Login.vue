@@ -19,6 +19,5 @@ const testTsx = (props: { title: string }) => {
   <testTsx title="Login Page" />
 </template>
 
-<style lang="less" scoped>
-
+<style lang="scss" scoped>
 </style>
