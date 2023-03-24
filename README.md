@@ -6,11 +6,11 @@
 ## 🦄 Usage
 
 ```bash
-npm install -g yarn
+npm install -g pnpm
 
-yarn install
+pnpm i
 
-yarn run dev
+pnpm run dev
 ```
 
 ## 🚀 Features

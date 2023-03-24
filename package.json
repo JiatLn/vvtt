@@ -2,6 +2,7 @@
   "name": "vvtt",
   "type": "module",
   "version": "1.0.0",
+  "packageManager": "pnpm@7",
   "description": "VVTT is means Vite-Vue-Ts-Template :)",
   "author": {
     "name": "JiatLn",
