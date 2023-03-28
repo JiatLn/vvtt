@@ -3,6 +3,7 @@ interface Props {
   src: string
   class?: string | string[]
   errSrc?: string
+  alt?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -43,7 +44,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <img ref="imgRef" :class="props.class" :src="props.errSrc" alt="">
+  <img ref="imgRef" :class="props.class" :src="props.errSrc" :alt="props.alt || 'img'">
 </template>
 
 <style lang="scss">
