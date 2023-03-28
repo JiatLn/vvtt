@@ -26,6 +26,7 @@
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.33",
     "pinia-plugin-keep": "^0.3.1",
+    "pinyin-pro": "^3.13.1",
     "unocss": "^0.50.6",
     "vue": "^3.2.47",
     "vue-router": "4"

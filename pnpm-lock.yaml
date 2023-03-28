@@ -19,6 +19,7 @@ specifiers:
   lodash-es: ^4.17.21
   pinia: ^2.0.33
   pinia-plugin-keep: ^0.3.1
+  pinyin-pro: ^3.13.1
   sass: ^1.60.0
   terser: ^5.16.8
   typescript: ^5.0.2
@@ -39,6 +40,7 @@ dependencies:
   lodash-es: 4.17.21
   pinia: 2.0.33_p4srtwdgezcoeovfcc2yxzvaue
   pinia-plugin-keep: 0.3.1_typescript@5.0.2
+  pinyin-pro: 3.13.1
   unocss: 0.50.6_vite@4.2.1
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
@@ -3507,6 +3509,10 @@ packages:
       typescript: 5.0.2
       vue: 3.2.47
       vue-demi: 0.13.11_vue@3.2.47
+    dev: false
+
+  /pinyin-pro/3.13.1:
+    resolution: {integrity: sha512-40mx64fuNWApC8FbW9xOu2hMDNBAPsYVYI29lx3vjMB94H8klF71r+zveC5x5bRy2nct7w4ZvD0DlglrmZX0vw==}
     dev: false
 
   /pkg-types/1.0.2:
