@@ -4,5 +4,5 @@ export function shortName(name: string) {
   return pinyin(name, {
     pattern: 'initial',
     type: 'array',
-  }).join('')
+  }).map(item => item[0]).join('')
 }
