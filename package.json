@@ -9,6 +9,10 @@
     "email": "lne128gene980@163.com"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JiatLn/vvtt.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
