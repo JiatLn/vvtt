@@ -1,3 +1,9 @@
+:root {
+  --c-bg: #fff;
+  --c-scrollbar: #bbb;
+  --c-scrollbar-hover: #999;
+}
+
 html,
 body {
   @apply w-full h-full;
@@ -5,4 +11,28 @@ body {
   #app {
     @apply w-full h-full;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
 }
