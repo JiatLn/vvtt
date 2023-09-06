@@ -4,10 +4,15 @@ import logo from '@/assets/logo.png'
 function onLogin() {
   login({ token: 'KFCVME50' })
 }
+
+function showMsg() {
+  showMessage('Hello, VVTT')
+}
 </script>
 
 <template>
-  <div h-100vh w-full flex="c col">
+  <div h-100vh w-full flex="c col" gap-4>
+    <button @click="showMsg" btn>show message</button>
     <LazyImg w-80px h-80px :src="logo" />
     <div flex items-start gap-2>
       <TheBox title="UnoCSS">

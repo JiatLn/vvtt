@@ -32,6 +32,7 @@ export default ({ mode }) => {
         dts: 'src/types/auto-import.d.ts',
         dirs: [
           'src/composables/**.ts',
+          'src/composables/**.tsx',
           'src/store/**.ts',
         ],
         vueTemplate: true,
