@@ -6,8 +6,7 @@ export interface IUserInfo {
   id: string
 }
 
-export const useUserStore = defineStore({
-  id: 'user',
+export const useUserStore = defineStore('user', {
   state: (): IUserInfo => {
     return {
       token: '',
